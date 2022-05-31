@@ -1,0 +1,44 @@
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ccc;
+
+    header, main, footer {
+        padding: 1rem;
+    }
+
+    header {
+        background-color: steelblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer {
+        margin-top: auto;
+        background-color: steelblue;
+        text-align: center;
+    }
+
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.see {
+    background-color: rgb(39, 75, 105);
+    color: #fff;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+

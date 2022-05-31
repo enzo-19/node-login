@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Enzo</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Login App</a></h1>
+        <nav>
+            <% if (user) { %>
+                <span><%= user.email %></span>
+                <a href="/logout">Logout</a>
+            <% } else { %>
+                <a href="/login">Log in</a>
+                <a href="/signup">Sign up</a>
+            <% } %>      
+        </nav>
+    </header>
+
+
+    
+    <!-- <nav>
+        <h1><a href="/">Ninja Smoothies</a></h1>
+        <ul>
+          <% if (user) { %>
+          <li>Welcome, <%= user.email %></li>
+          <li><a href="/logout">Log out</a></li>
+          <% } else { %>
+          <li><a href="/login">Log in</a></li>
+          <li><a href="/signup" class="btn">Sign up</a></li>
+          <% } %>
+        </ul>
+    </nav> -->
+    
+    
